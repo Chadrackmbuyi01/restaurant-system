@@ -5,58 +5,45 @@
  */
 package za.ac.cput.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Employee {
-    private String empId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int empId;
     private String empFname;
     private String empLname;
     private String empAddress;
 
-    public Employee(){
+     public Employee (Builder builder){
+         this.empFname=builder.empFname;
+         this.empLname=builder.empLname;
+         this.empAddress=builder.empAddress;
+
+     }
+
+    public Employee() {
 
     }
 
-    // private constructor required
-    private Employee(Builder builder){
-        // private
-        this.empId = builder.empId;
-        this.empFname = builder.empFname;
-        this.empLname = builder.empLname;
-        this.empAddress = builder.empAddress;
-
-
-    }
-
-
-    public String getEmpId() {
+    public int getEmpId() {
         return empId;
-    }
-
-    public void setEmpId(String empId) {
-        this.empId = empId;
     }
 
     public String getEmpFname() {
         return empFname;
     }
 
-    public void setEmpFname(String empFname) {
-        this.empFname = empFname;
-    }
-
     public String getEmpLname() {
         return empLname;
     }
 
-    public void setEmpLname(String empLname) {
-        this.empLname = empLname;
-    }
-
     public String getEmpAddress() {
         return empAddress;
-    }
-
-    public void setEmpAddress(String empAddress) {
-        this.empAddress = empAddress;
     }
 
     @Override
@@ -69,14 +56,14 @@ public class Employee {
                 '}';
     }
 
+
     public static class Builder{
 
-        private String empId;
+        private int empId;
         private String empFname;
         private String empLname;
         private String empAddress;
-
-        public Builder setEmpId(String empId) {
+        public Builder setEmpId(int empId) {
             this.empId = empId;
             return this;
         }
@@ -96,18 +83,19 @@ public class Employee {
             return this;
         }
 
-        public Builder copy(Employee employee){
+       public Builder cody(Employee employee){
+            this.empFname=employee.empFname;
+            this.empLname=employee.empLname;
+            this.empAddress=employee.empAddress;
 
-            this.empId = employee.empId;
-            this.empFname = employee.empFname;
-            this.empLname = employee.empLname;
-            this.empAddress = employee.empAddress;
             return this;
         }
-
-        public Employee build(){
-            return new Employee(this);
+        public Employee buil(){
+            return new Employee (this);
         }
     }
+
+
+
 
 }

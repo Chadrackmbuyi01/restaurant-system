@@ -10,6 +10,6 @@ import za.ac.cput.service.IService;
 
 import java.util.List;
 
-public interface EmployeeService extends IService<Employee,String> {
+public interface EmployeeService extends IService<Employee,Integer> {
     List<Employee> getAll();
 }

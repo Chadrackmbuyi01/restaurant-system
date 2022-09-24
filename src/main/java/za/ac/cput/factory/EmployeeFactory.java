@@ -6,18 +6,16 @@
 package za.ac.cput.factory;
 
 import za.ac.cput.entity.Employee;
-import za.ac.cput.util.StringHelper;
+import za.ac.cput.helper.Helper;
 
 public class EmployeeFactory {
 
     public static Employee createEmployee(String empFname, String empLname, String empAddress){
-                    String id = StringHelper.generateId();
-                    Employee employee = new Employee.Builder().setEmpId(id)
-                            .setEmpFname(empFname)
-                            .setEmpLname(empLname)
-                            .setEmpAddress(empAddress)
-                            .build();
-                    return employee;
+
+        Helper.checkStringPara("empFname:",empFname);
+        Helper.checkStringPara("empLname",empLname);
+        Helper.checkStringPara("empAddress",empAddress);
+        return new Employee.Builder().setEmpFname(empFname).setEmpLname(empLname).setEmpAddress(empAddress).buil();
 
     }
 }

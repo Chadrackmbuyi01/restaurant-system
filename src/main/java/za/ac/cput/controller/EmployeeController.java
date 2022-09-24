@@ -1,35 +1,52 @@
 package za.ac.cput.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 import za.ac.cput.entity.Employee;
+import za.ac.cput.service.entity.EmployeeService;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("restaurant/employee/")
 public class EmployeeController {
 
-    @PostMapping("create")
-    public Employee create(Employee employee){
-        return null;
+    private final EmployeeService employeeService;
 
+    @Autowired public EmployeeController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
     }
 
-    //public Employee read(String empNumber){
+    @PostMapping("/save")
+    public ResponseEntity<Employee> save(@RequestBody  Employee gender)
+    {
+        System.out.println("save"+gender);
+        Employee save= this.employeeService.save(gender);
+        return  ResponseEntity.ok(save);
+    }
 
-    //}
+    @GetMapping("/read/{id}")
+    public ResponseEntity<Employee> read(@PathVariable  int id) {
+        Employee read=this.employeeService.read(id).orElseThrow(()->new ResponseStatusException(HttpStatus.NOT_FOUND));
+        return ResponseEntity.ok(read);
+    }
 
-    //public Employee update(Employee employee){
 
-    //}
+    @DeleteMapping("/delete")
+    public  ResponseEntity<Void> delete(Employee employee)
+    {
+        this.employeeService.delete(employee);
 
-    //public boolean delete(String s){
+        return  ResponseEntity.noContent().build();
+    }
 
-    //}
-
-    //public List<Employee> getAll(){
-
-    //}
+    @GetMapping("All")
+    public ResponseEntity<List<Employee>> getAll(){
+        List<Employee> employee = this.employeeService.getAll();
+        return ResponseEntity.ok(employee);
+    }
 }

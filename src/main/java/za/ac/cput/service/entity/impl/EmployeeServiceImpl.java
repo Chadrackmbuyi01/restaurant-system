@@ -5,47 +5,45 @@
  */
 package za.ac.cput.service.entity.impl;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import za.ac.cput.entity.Employee;
 import za.ac.cput.repository.EmployeeRepository;
 import za.ac.cput.service.entity.EmployeeService;
 
-import java.util.List;
 
+import java.util.List;
+import java.util.Optional;
+
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-    private final EmployeeRepository repository;
-    private static EmployeeService SERVICE;
+    protected EmployeeRepository repository;
+    @Autowired
+    public EmployeeServiceImpl(EmployeeRepository repository) {
+        this.repository = repository;
+    }
 
-    public EmployeeServiceImpl(){
-        this.repository = EmployeeRepository.getRepository();
-    }
-    public static EmployeeService getSERVICE(){
-        if (SERVICE == null)
-            SERVICE = new EmployeeServiceImpl();
-        return SERVICE;
-    }
+
     @Override
-    public Employee create(Employee employee) {
-        return this.repository.create(employee);
+    public Employee save(Employee employee) {
+        return this.repository.save(employee);
     }
 
     @Override
-    public Employee read(String empNumber) {
-        return this.repository.read(empNumber);
+    public Optional<Employee> read(Integer integer) {
+        return this.repository.findById(integer);
     }
 
     @Override
-    public Employee update(Employee employee) {
-        return this.repository.update(employee);
-    }
+    public void delete(Employee employee) {
 
-    @Override
-    public boolean delete(String s) {
-        return this.repository.delete(s);
+        this.repository.delete(employee);
     }
 
     @Override
     public List<Employee> getAll() {
-        return (List<Employee>) this.repository.getAll();
+        return this.repository.findAll();
     }
 }

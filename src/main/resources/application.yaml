@@ -1,0 +1,13 @@
+server:
+  error:
+    include-stacktrace: always
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/Resta-db?createDatabaseIfNotExist=true
+    username: root
+    password: Chadsmith2022
+
