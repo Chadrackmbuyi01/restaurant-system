@@ -26,8 +26,8 @@ class DriverServiceImplTest {
     protected DriverServiceImpl service;
     Driver driverService= DriverFactory.createDriver("12B", "4Burgers",
             "Lionel Messi");
-    Driver driverService2022= DriverFactory.createDriver("12C", "4Chips",
-            "Lionel Richie");
+    Driver driverService2022= DriverFactory.createDriver("12B", "4Burgers",
+            "Lionel Messi");
 
     protected Driver driver;
     protected String driverName;
