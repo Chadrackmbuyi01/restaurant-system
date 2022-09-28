@@ -5,19 +5,20 @@
  */
 package za.ac.cput.entity;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 @Entity
-public class Employee {
+public class Employee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int empId;
-    private String empFname;
-    private String empLname;
-    private String empAddress;
+    @NotNull private int empId;
+    @NotNull private String empFname, empLname, empAddress;
 
      public Employee (Builder builder){
          this.empFname=builder.empFname;
@@ -59,10 +60,10 @@ public class Employee {
 
     public static class Builder{
 
-        private int empId;
-        private String empFname;
-        private String empLname;
-        private String empAddress;
+        @NotNull private int empId;
+        @NotNull private String empFname;
+        @NotNull private String empLname;
+        @NotNull private String empAddress;
         public Builder setEmpId(int empId) {
             this.empId = empId;
             return this;
@@ -90,7 +91,7 @@ public class Employee {
 
             return this;
         }
-        public Employee buil(){
+        public Employee build(){
             return new Employee (this);
         }
     }

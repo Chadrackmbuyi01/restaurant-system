@@ -10,12 +10,14 @@ import za.ac.cput.helper.Helper;
 
 public class EmployeeFactory {
 
-    public static Employee createEmployee(String empFname, String empLname, String empAddress){
+    public static Employee build(String empFname, String empLname, String empAddress){
 
         Helper.checkStringPara("empFname:",empFname);
         Helper.checkStringPara("empLname",empLname);
         Helper.checkStringPara("empAddress",empAddress);
-        return new Employee.Builder().setEmpFname(empFname).setEmpLname(empLname).setEmpAddress(empAddress).buil();
+        if (Helper.isEmptyOrNull(empFname) || Helper.isEmptyOrNull(empLname) || Helper.isEmptyOrNull(empAddress) )
+            throw new IllegalArgumentException("empFname or/and empLname");
+        return new Employee.Builder().setEmpFname(empFname).setEmpLname(empLname).setEmpAddress(empAddress).build();
 
     }
 }

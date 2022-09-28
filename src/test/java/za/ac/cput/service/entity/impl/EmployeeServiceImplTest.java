@@ -13,28 +13,27 @@ import za.ac.cput.factory.EmployeeFactory;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.MethodName.class)
 @Slf4j
 class EmployeeServiceImplTest {
     @Autowired
     protected EmployeeServiceImpl service;
-    Employee employeeService=EmployeeFactory.createEmployee("Kalala","Serge",
+    Employee employeeService1=EmployeeFactory.build("Kalala","Serge",
             "Rose road");
-    Employee employeeService1=EmployeeFactory.createEmployee("Kalala","Smith",
-            "Rose road");
+    Employee employeeService=EmployeeFactory.build("Chadrack","Kalala",
+            "40 Constitution street, Cape Town");
     @Test
     void a_save() {
-        Employee employeeService1=this.service.save(employeeService);
-        Employee employeeService=this.service.save(employeeService1);
+        Employee employeeService1 = this.service.save(employeeService);
+        Employee employeeService = this.service.save(employeeService1);
         log.info(employeeService1.toString());
         log.info(employeeService.toString());
     }
 
     @Test
     void b_read() {
-        Optional<Employee> temp=this.service.read(2);
+        Optional<Employee> temp = this.service.read(3);
         log.info(temp.toString());
     }
 

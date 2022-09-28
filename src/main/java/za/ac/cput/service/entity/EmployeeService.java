@@ -12,4 +12,6 @@ import java.util.List;
 
 public interface EmployeeService extends IService<Employee,Integer> {
     List<Employee> getAll();
+
+    void deleteById(int empId);
 }
