@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="48ef7146-aef4-443a-b241-5faf1102ffd2" name="Changes" comment="Fixed bugs for the delete method controller" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="com.haulmont.jpb.JpaRepository" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27QFEVjCF4ld28tqZ8OeRpbgO0n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../restaurant-system1" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Chadrack Mbuyi\IdeaProjects\restaurant-system\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="za.ac.cput" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="za.ac.cput.controller" />
+      <recent name="za.ac.cput.service.entity.impl" />
+      <recent name="za.ac.cput.repository" />
+      <recent name="za.ac.cput.factory" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EmployeeControllerTest">
+    <configuration name="RestaurantSystemApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.RestaurantSystemApplication" />
+      <module name="restaurant-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restaurant-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.controller" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.controller.EmployeeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeControllerTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restaurant-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.controller" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.controller.EmployeeControllerTest" />
+      <option name="METHOD_NAME" value="read" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeControllerTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restaurant-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.controller" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.controller.EmployeeControllerTest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restaurant-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.service.entity.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.service.entity.impl" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.service.entity.impl.EmployeeServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EmployeeControllerTest" />
+        <item itemvalue="JUnit.EmployeeControllerTest.read" />
+        <item itemvalue="Application.RestaurantSystemApplication" />
+        <item itemvalue="JUnit.EmployeeServiceImplTest" />
+        <item itemvalue="JUnit.EmployeeControllerTest.save" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48ef7146-aef4-443a-b241-5faf1102ffd2" name="Changes" comment="" />
+      <created>1649244294854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649244294854</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Unversioned files">
+      <created>1649266283533</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649266283534</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Comment line was added">
+      <created>1649266508393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649266508393</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Employee domain was built successfully">
+      <created>1649266574748</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649266574748</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Restaurant entity domain was built successfully">
+      <created>1649266634422</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649266634422</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created the employeefactory class and his test class. The test runs successfully">
+      <created>1649279245608</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649279245608</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Creation of restaurant factory class">
+      <created>1649279606024</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649279606024</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Creation of the restaurant factory test class, it has ran successfully">
+      <created>1649279855476</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649279855476</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Creation of the repository package and initializing my classes">
+      <created>1649435507529</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649435507529</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Creation of the interface repositories of my entities">
+      <created>1649435656380</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649435656380</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Creation of the general interface repository with the CRUD methods">
+      <created>1649435877538</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649435877538</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Creation of test repository package and initiate my test classes">
+      <created>1649436339067</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649436339067</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Parameters added">
+      <created>1649476717983</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649476717983</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Defining the interface of the employee repository where to store method CRUD">
+      <created>1649509655943</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649509655943</updated>
+    </task>
+    <task id="LOCAL-00014" summary="I just overload the employee repository with CRUD operations">
+      <created>1649593656463</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1649593656463</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Helper class created">
+      <created>1649593748830</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649593748830</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Done with employee task. currently tackling Restaurant repository">
+      <created>1649599111896</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1649599111896</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Create and read operations have been added">
+      <created>1649600571531</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1649600571532</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update, delete and get all operations have been added">
+      <created>1649601001469</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1649601001469</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changes added">
+      <created>1649609318223</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1649609318223</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Comment line added">
+      <created>1649610433316</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1649610433316</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add changes to the pom file">
+      <created>1659882510592</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1659882510592</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added email validator dependency and  created string helper classs">
+      <created>1660501137514</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1660501137514</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Connected the application into JDBC mysql database and i fixed bugs into util package files">
+      <created>1660543635627</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1660543635627</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Creating the service interface package and implementation">
+      <created>1661089912146</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1661089912146</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Relocated the configuration file outside of the myJDBC package and deleted the package">
+      <created>1661335339067</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1661335339068</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fixed all bugs">
+      <created>1663654941934</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1663654941934</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Fixed all bugs">
+      <created>1663656929967</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1663656929967</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Creation of the controller root">
+      <created>1663658254839</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1663658254839</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Creation of the api root">
+      <created>1663987558482</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1663987558483</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fixed bugs for the delete method controller">
+      <created>1664341671603</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1664341671604</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creation of restaurant factory class" />
+    <MESSAGE value="Creation of the restaurant factory test class, it has ran successfully" />
+    <MESSAGE value="Creation of the repository package and initializing my classes" />
+    <MESSAGE value="Creation of the interface repositories of my entities" />
+    <MESSAGE value="Creation of the general interface repository with the CRUD methods" />
+    <MESSAGE value="Creation of test repository package and initiate my test classes" />
+    <MESSAGE value="Parameters added" />
+    <MESSAGE value="Defining the interface of the employee repository where to store method CRUD" />
+    <MESSAGE value="Generating the CRUD methods into my employee repository" />
+    <MESSAGE value="I just overload the employee repository with CRUD operations" />
+    <MESSAGE value="Helper class created" />
+    <MESSAGE value="Done with employee task. currently tackling Restaurant repository" />
+    <MESSAGE value="Create and read operations have been added" />
+    <MESSAGE value="Update, delete and get all operations have been added" />
+    <MESSAGE value="Changes added" />
+    <MESSAGE value="Comment line added" />
+    <MESSAGE value="Add changes to the pom file" />
+    <MESSAGE value="Added email validator dependency and  created string helper classs" />
+    <MESSAGE value="Connected the application into JDBC mysql database and i fixed bugs into util package files" />
+    <MESSAGE value="Creating the service interface package and implementation" />
+    <MESSAGE value="Relocated the configuration file outside of the myJDBC package and deleted the package" />
+    <MESSAGE value="Fixed all bugs" />
+    <MESSAGE value="Creation of the controller root" />
+    <MESSAGE value="Creation of the api root" />
+    <MESSAGE value="Fixed bugs for the delete method controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs for the delete method controller" />
+  </component>
+</project>
