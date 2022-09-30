@@ -13,6 +13,7 @@ package za.ac.cput.repository;
 import za.ac.cput.entity.Driver;
 
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 public class DriverRepository implements IDriverRepository {
@@ -84,6 +85,21 @@ public class DriverRepository implements IDriverRepository {
 
         return driverDB;
 
+    }
+
+    @Override
+    public Driver save(Driver driver) {
+        return null;
+    }
+
+    @Override
+    public Optional<Driver> findById(String s) {
+        return Optional.empty();
+    }
+
+    @Override
+    public Object findAll() {
+        return null;
     }
 
 
