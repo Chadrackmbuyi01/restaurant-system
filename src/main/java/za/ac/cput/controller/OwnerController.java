@@ -6,7 +6,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import za.ac.cput.entity.Owner;
-import za.ac.cput.service.entity.impl.OwnerService;
+import za.ac.cput.service.entity.OwnerService;
+
 
 import java.util.List;
 
