@@ -9,7 +9,14 @@ package za.ac.cput.repository;
 
 import za.ac.cput.entity.Payment;
 import java.util.Set;
+import java.util.Optional;
 
 public interface IPaymentRepository extends IRepository <Payment, String>{
     public Set<Payment> getAll();
+
+    Payment save(Payment payment);
+
+    Optional<Payment> findById(String s);
+
+    Object findAll();
 }
