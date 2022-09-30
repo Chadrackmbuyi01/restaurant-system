@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 
+
 public class OwnerServiceImpl implements OwnerService {
     protected OwnerRepository repository;
     @Autowired
