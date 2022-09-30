@@ -11,6 +11,7 @@ import za.ac.cput.entity.Payment;
 
 import java.util.Set;
 import java.util.HashSet;
+import java.util.Optional;
 
 public class PaymentRepository implements IPaymentRepository{
     private static PaymentRepository paymentRepository = null;
@@ -72,6 +73,21 @@ public class PaymentRepository implements IPaymentRepository{
     @Override
     public Set<Payment> getAll(){
         return paymentDB;
+    }
+
+    @Override
+    public Payment save(Payment payment) {
+        return null;
+    }
+
+    @Override
+    public Optional<Payment> findById(String s) {
+        return Optional.empty();
+    }
+
+    @Override
+    public Object findAll() {
+        return null;
     }
 }
 
