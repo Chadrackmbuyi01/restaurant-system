@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48ef7146-aef4-443a-b241-5faf1102ffd2" name="Changes" comment="Fixed bugs for the delete method controller" />
+    <list default="true" id="48ef7146-aef4-443a-b241-5faf1102ffd2" name="Changes" comment="Completed my controller test case">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/api/EmployeeAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/api/EmployeeApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/api/EmployeeAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/controller/EmployeeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/controller/EmployeeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/service/entity/impl/EmployeeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/service/entity/impl/EmployeeServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/api/EmployeeApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/api/EmployeeApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/entity/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/controller/EmployeeControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/controller/EmployeeControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/service/entity/impl/EmployeeServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/service/entity/impl/EmployeeServiceImplTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,13 +99,14 @@
       <recent name="za.ac.cput" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="za.ac.cput.api" />
       <recent name="za.ac.cput.controller" />
       <recent name="za.ac.cput.service.entity.impl" />
       <recent name="za.ac.cput.repository" />
       <recent name="za.ac.cput.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeControllerTest">
+  <component name="RunManager" selected="Application.RestaurantSystemApplication">
     <configuration name="RestaurantSystemApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.RestaurantSystemApplication" />
       <module name="restaurant-system" />
@@ -103,6 +116,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeAPITest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restaurant-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.api" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.api.EmployeeAPITest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,22 +167,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeControllerTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="restaurant-system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="za.ac.cput.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.controller" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.controller.EmployeeControllerTest" />
-      <option name="METHOD_NAME" value="save" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EmployeeServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restaurant-system" />
       <extension name="coverage">
@@ -171,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RestaurantSystemApplication" />
+        <item itemvalue="JUnit.EmployeeAPITest.save" />
         <item itemvalue="JUnit.EmployeeControllerTest" />
         <item itemvalue="JUnit.EmployeeControllerTest.read" />
-        <item itemvalue="Application.RestaurantSystemApplication" />
         <item itemvalue="JUnit.EmployeeServiceImplTest" />
-        <item itemvalue="JUnit.EmployeeControllerTest.save" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664341671604</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Completed my controller test case">
+      <created>1664345295419</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1664345295419</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,7 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creation of restaurant factory class" />
     <MESSAGE value="Creation of the restaurant factory test class, it has ran successfully" />
     <MESSAGE value="Creation of the repository package and initializing my classes" />
     <MESSAGE value="Creation of the interface repositories of my entities" />
@@ -438,6 +457,7 @@
     <MESSAGE value="Creation of the controller root" />
     <MESSAGE value="Creation of the api root" />
     <MESSAGE value="Fixed bugs for the delete method controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs for the delete method controller" />
+    <MESSAGE value="Completed my controller test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed my controller test case" />
   </component>
 </project>

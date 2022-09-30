@@ -33,7 +33,7 @@ class EmployeeServiceImplTest {
 
     @Test
     void b_read() {
-        Optional<Employee> temp = this.service.read(3);
+        Optional<Employee> temp = this.service.read(1);
         log.info(temp.toString());
     }
 

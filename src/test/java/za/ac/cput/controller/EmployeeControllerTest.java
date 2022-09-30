@@ -57,20 +57,21 @@ class EmployeeControllerTest {
         ResponseEntity<Employee> response = this.restTemplate.getForEntity(url, Employee.class);
         System.out.println(response);
         assertAll(
-                //Expected Not found since we are reading something that never exist
-                () -> assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode())
+                //Expected Not found since we are implementing auto generic of id
+                () -> assertEquals(HttpStatus.OK, response.getStatusCode()),
+                () -> assertNotNull(response.getStatusCode())
         );
     }
 
     @Test
-    @Order(3)
+    @Order(4)
     void delete() {
         String url = baseUrl + "delete/" + this.employee.getEmpId();
         this.restTemplate.delete(url);
    }
 
     @Test
-    @Order(4)
+    @Order(3)
     void getAll() {
         String url = baseUrl + "all";
         System.out.println(url);
