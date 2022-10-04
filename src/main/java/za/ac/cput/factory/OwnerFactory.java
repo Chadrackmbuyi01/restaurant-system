@@ -1,6 +1,6 @@
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Owner;
+import za.ac.cput.domain.Owner;
 
 public class OwnerFactory {
 

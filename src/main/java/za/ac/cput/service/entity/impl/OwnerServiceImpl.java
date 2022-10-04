@@ -1,7 +1,7 @@
 package za.ac.cput.service.entity.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import za.ac.cput.entity.Owner;
+import za.ac.cput.domain.Owner;
 import za.ac.cput.repository.OwnerRepository;
 import za.ac.cput.service.entity.OwnerService;
 

@@ -10,11 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import za.ac.cput.entity.Role;
+import za.ac.cput.domain.Role;
 import za.ac.cput.service.entity.RoleService;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("restaurant/role/")

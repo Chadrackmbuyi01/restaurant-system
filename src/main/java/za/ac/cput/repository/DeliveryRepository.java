@@ -13,7 +13,7 @@ Date 07 April 2022
 
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Delivery;
+import za.ac.cput.domain.Delivery;
 
 import java.util.HashSet;
 import java.util.Set;

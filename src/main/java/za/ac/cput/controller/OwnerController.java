@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import za.ac.cput.entity.Owner;
+import za.ac.cput.domain.Owner;
 import za.ac.cput.service.entity.OwnerService;
 
 

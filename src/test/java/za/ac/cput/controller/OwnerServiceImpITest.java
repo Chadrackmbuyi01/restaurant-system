@@ -3,7 +3,7 @@ package za.ac.cput.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import za.ac.cput.entity.Owner;
+import za.ac.cput.domain.Owner;
 import za.ac.cput.factory.OwnerFactory;
 import za.ac.cput.service.entity.impl.OwnerServiceImpl;
 

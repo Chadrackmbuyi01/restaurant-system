@@ -1,6 +1,6 @@
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Reservation;
+import za.ac.cput.domain.Reservation;
 
 public class ReservationFactory {
     //creating objects

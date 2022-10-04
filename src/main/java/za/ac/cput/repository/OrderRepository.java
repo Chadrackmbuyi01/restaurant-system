@@ -6,7 +6,7 @@
 */
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Order;
+import za.ac.cput.domain.Order;
 
 import java.util.HashSet;
 import java.util.Set;

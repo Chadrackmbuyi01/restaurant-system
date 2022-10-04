@@ -5,7 +5,7 @@
 
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Role;
+import za.ac.cput.domain.Role;
 
 
 public class RoleFactory {

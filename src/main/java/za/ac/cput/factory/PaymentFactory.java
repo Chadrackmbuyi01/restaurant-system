@@ -7,7 +7,7 @@
 
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Payment;
+import za.ac.cput.domain.Payment;
 
 public class PaymentFactory {
     public static Payment createPayment(String paymentId, String payCash, String payCard, String payEft) {

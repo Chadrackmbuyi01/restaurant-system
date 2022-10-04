@@ -1,6 +1,6 @@
 package za.ac.cput.service.entity;
 
-import za.ac.cput.entity.Payment;
+import za.ac.cput.domain.Payment;
 import za.ac.cput.service.IService;
 
 import java.util.List;

@@ -5,7 +5,7 @@
 
 package za.ac.cput.service.entity;
 
-import za.ac.cput.entity.Role;
+import za.ac.cput.domain.Role;
 import za.ac.cput.service.IService;
 import java.util.List;
 

@@ -7,7 +7,7 @@ package za.ac.cput.service.entity.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import za.ac.cput.entity.Role;
+import za.ac.cput.domain.Role;
 import za.ac.cput.repository.RoleRepository;
 import za.ac.cput.service.entity.RoleService;
 

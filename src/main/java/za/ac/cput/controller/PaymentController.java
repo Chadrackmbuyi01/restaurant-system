@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import za.ac.cput.entity.Payment;
+import za.ac.cput.domain.Payment;
 import za.ac.cput.service.entity.PaymentService;
 
 import java.util.List;

@@ -7,7 +7,7 @@
 
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Payment;
+import za.ac.cput.domain.Payment;
 import java.util.Set;
 import java.util.Optional;
 

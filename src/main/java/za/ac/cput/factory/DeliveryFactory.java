@@ -8,10 +8,7 @@ Date 06 April 2022
 
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Delivery;
-import za.ac.cput.entity.Driver;
-
-import java.util.UUID;
+import za.ac.cput.domain.Delivery;
 
 public class DeliveryFactory {
 

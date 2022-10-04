@@ -5,7 +5,7 @@
  */
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Employee;
+import za.ac.cput.domain.Employee;
 import za.ac.cput.helper.Helper;
 
 public class EmployeeFactory {

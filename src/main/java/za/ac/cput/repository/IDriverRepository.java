@@ -8,20 +8,13 @@ Date 07 April 2022
 
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Driver;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import za.ac.cput.domain.Driver;
 
-import java.util.Optional;
-import java.util.Set;
+@Repository
+public interface IDriverRepository extends JpaRepository<Driver,String> {
 
-public interface IDriverRepository extends IRepository <Driver,String>{
-
-    public Set<Driver> getAll();
-
-    Driver save(Driver driver);
-
-    Optional<Driver> findById(String s);
-
-    Object findAll();
 }
 
 

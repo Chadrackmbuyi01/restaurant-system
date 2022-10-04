@@ -6,7 +6,7 @@
 */
 
 package za.ac.cput.factory;
-import za.ac.cput.entity.Customer;
+import za.ac.cput.domain.Customer;
 
 public class CustomerFactory {
     public static Customer createcustomer(String custId, String custFirstName, String custLastName, int custCellNum, String custEmail) {

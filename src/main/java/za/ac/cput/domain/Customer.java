@@ -8,7 +8,7 @@
 
 
 
-package za.ac.cput.entity;
+package za.ac.cput.domain;
 
 public class Customer {
     private String custId;

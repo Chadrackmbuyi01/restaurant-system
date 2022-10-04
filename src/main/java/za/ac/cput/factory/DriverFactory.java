@@ -8,7 +8,7 @@ Date 06 April 2022
 
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Driver;
+import za.ac.cput.domain.Driver;
 
 import java.util.UUID;
 

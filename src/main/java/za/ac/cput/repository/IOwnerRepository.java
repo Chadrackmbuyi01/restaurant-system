@@ -1,6 +1,6 @@
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Owner;
+import za.ac.cput.domain.Owner;
 
 import java.util.Set;
 

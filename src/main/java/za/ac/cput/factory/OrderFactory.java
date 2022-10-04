@@ -8,7 +8,7 @@
 
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Order;
+import za.ac.cput.domain.Order;
 
 public class OrderFactory {
 

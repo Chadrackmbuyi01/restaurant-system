@@ -1,6 +1,6 @@
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Restaurant;
+import za.ac.cput.domain.Restaurant;
 
 import java.util.Set;
 

@@ -5,7 +5,7 @@
 
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Role;
+import za.ac.cput.domain.Role;
 import java.util.*;
 
 public class RoleRepository implements IRoleRepository {

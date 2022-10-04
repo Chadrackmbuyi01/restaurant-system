@@ -1,8 +1,7 @@
 package za.ac.cput.service.entity.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import za.ac.cput.entity.Customer;
+import za.ac.cput.domain.Customer;
 import za.ac.cput.repository.CustomerRepository;
 import za.ac.cput.service.entity.CustomerService;
 
@@ -10,7 +9,7 @@ import za.ac.cput.service.entity.CustomerService;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+//@Service
 public class CustomerServiceImpl implements CustomerService {
 
     protected CustomerRepository repository;
@@ -22,13 +21,15 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public Customer save(Customer customer) {
-        return this.repository.save(customer);
+        return null;//this.repository.save(Customer);
     }
 
     @Override
-    public Optional<Customer> read( String s) {
-        return this.repository.findById(s);
+    public Optional<Customer> read(Integer integer) {
+        return Optional.empty();
     }
+
+
 
     @Override
     public void delete(Customer customer) {
@@ -38,6 +39,6 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public List<Customer> getAll() {
-        return (List<Customer>) this.repository.findAll();
+        return null;//(List<Customer>) this.repository.findAll();
     }
 }

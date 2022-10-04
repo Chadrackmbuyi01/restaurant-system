@@ -3,7 +3,7 @@
    Author: Chadrack Mbuyi Kalala (219013012)
    Date: 29 March 2022
  */
-package za.ac.cput.entity;
+package za.ac.cput.domain;
 
 public class Restaurant {
     private String restRegNumber;

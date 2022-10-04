@@ -2,7 +2,7 @@ package za.ac.cput.service.entity;
 
 
 
-import za.ac.cput.entity.Customer;
+import za.ac.cput.domain.Customer;
 import za.ac.cput.service.IService;
 import java.util.List;
 

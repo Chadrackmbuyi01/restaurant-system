@@ -7,7 +7,7 @@
 
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Menu;
+import za.ac.cput.domain.Menu;
 
 import java.util.Set;
 

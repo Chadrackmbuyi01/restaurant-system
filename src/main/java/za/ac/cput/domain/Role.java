@@ -2,7 +2,7 @@
    Entity Role for Restaurant system
    Author: Marcia Zanele Bika (211054356)
  */
-package za.ac.cput.entity;
+package za.ac.cput.domain;
 
 public class Role {
 

@@ -7,7 +7,7 @@
 
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Menu;
+import za.ac.cput.domain.Menu;
 
 public class MenuFactory {
     public static Menu createMenu(String menuId, String menuItem) {

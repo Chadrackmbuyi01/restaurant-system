@@ -3,7 +3,7 @@
    Author: Chadrack Mbuyi Kalala (219013012)
    Date: 29 March 2022
  */
-package za.ac.cput.entity;
+package za.ac.cput.domain;
 
 import com.sun.istack.NotNull;
 
@@ -16,7 +16,7 @@ import java.io.Serializable;
 @Entity
 public class Employee implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull private int empId;
     @NotNull private String empFname, empLname, empAddress;
 

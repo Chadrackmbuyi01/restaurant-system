@@ -3,7 +3,7 @@ package za.ac.cput.service.entity.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import za.ac.cput.entity.Driver;
+import za.ac.cput.domain.Driver;
 import za.ac.cput.repository.IDriverRepository;
 import za.ac.cput.service.entity.DriverService;
 
@@ -33,30 +33,18 @@ public class DriverServiceImpl implements DriverService {
 
     @Override
     public void delete(Driver driver) {
-        this.repository.delete(String.valueOf(driver));
+        this.repository.delete(driver);
     }
 
     @Override
     public List<Driver> getAll(){
-        return (List<Driver>) this.repository.findAll();
+        return this.repository.findAll();
     }
 
+    @Override
+    public void deleteById(String DriverId) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 }

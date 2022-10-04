@@ -5,7 +5,7 @@
  * Date: 06 April 2022
  */
 
-package za.ac.cput.entity;
+package za.ac.cput.domain;
 
 public class Payment {
 

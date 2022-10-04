@@ -7,7 +7,7 @@ spring:
       ddl-auto: create
     show-sql: true
   datasource:
-    url: jdbc:mysql://localhost:3306/Resta-db?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/resta-db?createDatabaseIfNotExist=true
     username: root
     password: Chadsmith2022
 

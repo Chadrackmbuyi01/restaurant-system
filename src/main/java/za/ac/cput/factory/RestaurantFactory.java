@@ -5,10 +5,6 @@
  */
 package za.ac.cput.factory;
 
-import org.hibernate.internal.util.StringHelper;
-
-import za.ac.cput.entity.Restaurant;
-
 
 public class RestaurantFactory {
 

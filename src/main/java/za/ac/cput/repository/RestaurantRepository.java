@@ -5,8 +5,7 @@
  */
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Employee;
-import za.ac.cput.entity.Restaurant;
+import za.ac.cput.domain.Restaurant;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -6,7 +6,7 @@ Date 05 April 2022
 
  */
 
-package za.ac.cput.entity;
+package za.ac.cput.domain;
 
 
 
