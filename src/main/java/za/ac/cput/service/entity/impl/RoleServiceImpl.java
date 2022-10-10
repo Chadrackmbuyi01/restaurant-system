@@ -8,7 +8,7 @@ package za.ac.cput.service.entity.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import za.ac.cput.domain.Role;
-import za.ac.cput.repository.RoleRepository;
+import za.ac.cput.repository.IRoleRepository;
 import za.ac.cput.service.entity.RoleService;
 
 
@@ -18,9 +18,9 @@ import java.util.Optional;
 @Service
 public class RoleServiceImpl implements RoleService {
 
-    protected RoleRepository repository;
+    protected IRoleRepository repository;
     @Autowired
-    public RoleServiceImpl(RoleRepository repository) {
+    public RoleServiceImpl(IRoleRepository repository) {
         this.repository = repository;
     }
 
@@ -32,17 +32,21 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public Optional<Role> read(Integer integer) {
-        return this.read(integer);
+        return this.repository.findById(integer);
     }
 
     @Override
     public void delete(Role role) {
-
-        this.repository.delete(role.getRoleId());
+        this.repository.delete(role);
     }
 
     @Override
     public List<Role> getAll() {
-        return null;
+        return this.repository.findAll();
+    }
+
+    @Override
+    public void deleteById(int roleId) {
+
     }
 }

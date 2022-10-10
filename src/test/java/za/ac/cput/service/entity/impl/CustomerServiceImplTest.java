@@ -6,6 +6,7 @@ package za.ac.cput.service.entity.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,7 @@ class CustomerServiceImplTest {
 
 
     @Test
+    @Order(1)
     void save() {
         Customer customerService1=this.service.save(customerService);
         Customer customerService=this.service.save(customerService1);
@@ -36,17 +38,20 @@ class CustomerServiceImplTest {
     }
 
     @Test
+    @Order(2)
     void read() {
         Optional<Customer> temp=this.service.read(2);
         log.info(temp.toString());
     }
 
     @Test
+    @Order(4)
     void delete() {
         this.service.delete(customerService);
     }
 
     @Test
+    @Order(3)
     void getAll() {
         List<Customer> list=  this.service.getAll();
         log.info(list.toString());

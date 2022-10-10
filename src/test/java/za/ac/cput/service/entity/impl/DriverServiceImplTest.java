@@ -8,6 +8,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import za.ac.cput.domain.Driver;
+import za.ac.cput.domain.Employee;
 import za.ac.cput.factory.DriverFactory;
 
 
@@ -28,11 +29,11 @@ class DriverServiceImplTest {
     Driver driverService2022= DriverFactory.createDriver("12B", "4Burgers",
             "Lionel Messi");
 
-    protected Driver driver;
-    protected String driverName;
+//    protected Driver driver;
+//    protected String driverName;
+//    protected String deliveryId;
 
     @Test
-    @Order(1)
     void a_save() {
         Driver driverService2022=this.service.save(driverService);
         Driver driverService=this.service.save(driverService2022);
@@ -41,24 +42,18 @@ class DriverServiceImplTest {
     }
 
     @Test
-    @Order(2)
     void b_read() {
-        Optional<Driver> read = this.service.read(this.driverName);
-        System.out.println(read);
-        assertAll(
-                () -> assertTrue(read.isPresent()),
-                () -> assertEquals(this.driver, read.get())
-        );
+
+        Optional<Driver> read = this.service.read(driverService.getDeliveryId());
+        log.info(read.toString());
     }
 
     @Test
-    @Order(3)
     void c_delete() {
         this.service.delete(driverService);
     }
 
     @Test
-    @Order(4)
     void d_getAll() {
         List<Driver> list=  this.service.getAll();
         log.info(list.toString());

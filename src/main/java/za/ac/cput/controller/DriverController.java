@@ -44,10 +44,10 @@ public class DriverController {
         return this.driverService.read(unitNumber);
     }
 
-    @DeleteMapping("delete/{driverName}")
-    public ResponseEntity<Void> delete(@PathVariable String driverName){
-        log.info("Reading request: {}",driverName);
-        Optional<Driver> driver  = getById(driverName);
+    @DeleteMapping("delete/{deliveryId}")
+    public ResponseEntity<Void> delete(@PathVariable String deliveryId){
+        log.info("Reading request: {}",deliveryId);
+        Optional<Driver> driver  = getById(deliveryId);
         if (driver.isPresent()){
             this.driverService.delete(driver.get());
         }

@@ -5,11 +5,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+import za.ac.cput.domain.Employee;
 import za.ac.cput.domain.Owner;
 import za.ac.cput.service.entity.OwnerService;
 
 
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -28,6 +30,9 @@ public class OwnerController {
         Owner owner1= this.ownerService.save(owner);
         return  ResponseEntity.ok(owner1);
     }
+    private Optional<Owner> getById(int ownerId){
+        return this.ownerService.read(ownerId);
+    }
 
     @GetMapping("/read/{id}")
     public ResponseEntity<Owner> read(@PathVariable  int id) {
@@ -35,10 +40,15 @@ public class OwnerController {
         return ResponseEntity.ok(read);
     }
 
-    @DeleteMapping("/delete")
-    public  ResponseEntity<Void> delete(Owner owner)
+    @DeleteMapping("delete/{ownerId}")
+    public  ResponseEntity<Void> delete(@PathVariable int ownerId)
     {
-        this.ownerService.delete(owner);
+        //log.info("delete request:{}",ownerId);
+        System.out.println("delete" +""+ ownerId);
+        Optional<Owner> owner  = getById(ownerId);
+        if (owner.isPresent()){
+            this.ownerService.delete(owner.get());
+        }
 
         return  ResponseEntity.noContent().build();
     }

@@ -7,22 +7,30 @@
 
 package za.ac.cput.domain;
 
-public class Payment {
+import com.sun.istack.NotNull;
 
-    private String paymentId;
-    private String payCash;
-    private String payCard;
-    private String payEft;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
 
-    //private constructor
-    private Payment(Builder builder) {
+@Entity
+public class Payment implements Serializable {
+    @Id
+    @NotNull private String paymentId;
+    @NotNull private String payCash;
+    @NotNull private String payCard;
+    @NotNull private String payEft;
+
+    public Payment(Builder builder) {
         this.paymentId = builder.paymentId;
         this.payCash = builder.payCash;
         this.payCard = builder.payCard;
         this.payEft = builder.payEft;
     }
 
-    //Getters
+    public Payment(){
+
+    }
 
     public String getPaymentId() {
         return paymentId;
@@ -40,22 +48,6 @@ public class Payment {
         return payEft;
     }
 
-    //Setters
-    public void setPaymentId(String paymentId) {
-        this.paymentId = paymentId;
-    }
-
-    public void setPayCash(String payCash) {
-        this.payCash = payCash;
-    }
-
-    public void setPayCard(String payCard) {
-        this.payCard = payCard;
-    }
-
-    public void setPayEft(String payEft) {
-        this.payEft = payEft;
-    }
 
     //toString
     @Override
@@ -71,10 +63,10 @@ public class Payment {
     //Builder Pattern Class
 
     public static class Builder {
-        private String paymentId;
-        private String payCash;
-        private String payCard;
-        private String payEft;
+        @NotNull private String paymentId;
+        @NotNull private String payCash;
+        @NotNull private String payCard;
+        @NotNull private String payEft;
 
         public Builder setPaymentId(String paymentId) {
             this.paymentId = paymentId;

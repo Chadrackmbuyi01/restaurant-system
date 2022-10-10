@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface PaymentService extends IService <Payment, String>{
     List<Payment> getAll();
+
+    void deleteById(String paymentId);
 }

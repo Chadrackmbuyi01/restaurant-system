@@ -19,8 +19,7 @@ import java.util.Optional;
 class EmployeeServiceImplTest {
     @Autowired
     protected EmployeeServiceImpl service;
-    Employee employeeService1=EmployeeFactory.build("Kalala","Serge",
-            "Rose road");
+
     Employee employeeService=EmployeeFactory.build("Chadrack","Kalala",
             "40 Constitution street, Cape Town");
     @Test

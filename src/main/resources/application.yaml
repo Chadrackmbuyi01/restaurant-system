@@ -11,3 +11,7 @@ spring:
     username: root
     password: Chadsmith2022
 
+
+  #SECURITY CONFIGURATION
+
+

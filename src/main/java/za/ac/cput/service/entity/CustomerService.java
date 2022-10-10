@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface CustomerService extends IService<Customer,Integer> {
     List<Customer> getAll();
+
+    void deleteById(String custId);
 }

@@ -6,20 +6,27 @@ package za.ac.cput.domain;
  * 06-04-2022
  */
 
+
+import com.sun.istack.NotNull;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
+
 //import org.jetbrains.annotations.Contract;
+@Entity
+public class Owner implements Serializable {
+    @Id
+    @NotNull private int ownerId;
+    @NotNull private String ownerName;
 
-public class Owner {
 
-    private int ownerId;
-    private String ownerName;
-
-
-    //Construtor
-
-    //@Contract(pure = true)
-    private Owner(Builder builder) {
+    public Owner(Builder builder) {
         this.ownerId = builder.ownerId;
         this. ownerName= builder.ownerName;
+
+    }
+    public Owner(){
 
     }
 
@@ -27,17 +34,10 @@ public class Owner {
         return ownerId;
     }
 
-    public void setOwnerId(int ownerId) {
-        this.ownerId = ownerId;
-    }
-
     public String getOwnerName() {
         return ownerName;
     }
 
-    public void setOwnerName(String ownerName) {
-        ownerName = ownerName;
-    }
 
     public String toString() {
         return "Owner{" +
@@ -47,10 +47,10 @@ public class Owner {
     }
 
     public static class Builder {
-        private int ownerId;
-        private String ownerName;
+        @NotNull private int ownerId;
+        @NotNull private String ownerName;
 
-        public Builder setOwnwerId(int ownerId) {
+        public Builder setOwnerId(int ownerId) {
             this.ownerId= ownerId;
             return this;
         }

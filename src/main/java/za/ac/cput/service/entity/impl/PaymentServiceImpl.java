@@ -32,11 +32,16 @@ import java.util.Optional;
 
         @Override
         public void delete(Payment payment) {
-            this.repository.delete(String.valueOf(payment));
+            this.repository.delete(payment);
         }
 
         @Override
         public List<Payment> getAll() {
             return (List<Payment>) this.repository.findAll();
+        }
+
+        @Override
+        public void deleteById(String paymentId) {
+
         }
     }

@@ -7,16 +7,12 @@
 
 package za.ac.cput.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 import za.ac.cput.domain.Payment;
 import java.util.Set;
 import java.util.Optional;
+@Repository
+public interface IPaymentRepository extends JpaRepository<Payment, String> {
 
-public interface IPaymentRepository extends IRepository <Payment, String>{
-    public Set<Payment> getAll();
-
-    Payment save(Payment payment);
-
-    Optional<Payment> findById(String s);
-
-    Object findAll();
 }

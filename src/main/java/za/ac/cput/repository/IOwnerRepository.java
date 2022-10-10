@@ -1,9 +1,10 @@
 package za.ac.cput.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 import za.ac.cput.domain.Owner;
 
-import java.util.Set;
+@Repository
+public interface IOwnerRepository extends JpaRepository<Owner,Integer> {
 
-public interface IOwnerRepository extends IRepository<Owner,String>{
-    public Set<Owner> getAll();
 }

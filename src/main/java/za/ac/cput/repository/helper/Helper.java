@@ -1,4 +1,4 @@
-package za.ac.cput.helper;
+package za.ac.cput.repository.helper;
 
 
 import org.apache.commons.validator.routines.EmailValidator;

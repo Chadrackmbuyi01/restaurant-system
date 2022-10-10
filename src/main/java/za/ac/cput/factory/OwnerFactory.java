@@ -7,7 +7,7 @@ public class OwnerFactory {
     //creating objects
     public static Owner createOwner(int ownerId, String ownerName){
 
-        return new Owner.Builder().setOwnwerId(ownerId)
+        return new Owner.Builder().setOwnerId(ownerId)
                 .setOwnerName(ownerName)
                 .build();
 

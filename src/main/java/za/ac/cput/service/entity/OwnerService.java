@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface OwnerService extends IService<Owner,Integer> {
     List<Owner> getAll();
+
+    void deleteById(int ownerId);
 }

@@ -4,32 +4,34 @@
  */
 package za.ac.cput.domain;
 
-public class Role {
+import com.sun.istack.NotNull;
 
-    private int roleId;
-    private String roleName;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
 
-    //private constructor
-    private Role(Builder builder){
+@Entity
+public class Role implements Serializable {
+    @Id
+    @NotNull private int roleId;
+    @NotNull private String roleName;
+
+    public Role(Builder builder){
         this.roleId = builder.roleId;
         this.roleName = builder.roleName;
+    }
+    public Role(){
+
     }
 
     public int getRoleId() {
         return roleId;
     }
 
-    public void setRoleId(int roleId) {
-        this.roleId = roleId;
-    }
-
     public String getRoleName() {
         return roleName;
     }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
-    }
 
     @Override
     public String toString() {
@@ -39,8 +41,8 @@ public class Role {
                 '}';
     }
     public static class Builder{
-        private int roleId;
-        private String roleName;
+        @NotNull private int roleId;
+        @NotNull private String roleName;
 
         public Builder setRoleId(int roleId) {
             this.roleId = roleId;

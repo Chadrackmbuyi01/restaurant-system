@@ -84,7 +84,7 @@ public class Employee implements Serializable {
             return this;
         }
 
-       public Builder cody(Employee employee){
+       public Builder copy(Employee employee){
             this.empFname=employee.empFname;
             this.empLname=employee.empLname;
             this.empAddress=employee.empAddress;
