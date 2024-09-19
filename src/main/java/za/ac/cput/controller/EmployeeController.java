@@ -29,8 +29,8 @@ public class EmployeeController {
 
     @PostMapping("save")
     public ResponseEntity<Employee> save(@Valid @RequestBody Employee gender) {
-        log.info("Save request:{}",gender);
-        //System.out.println("save" +""+ gender);
+        //log.info("Save request:{}",gender);
+        System.out.println("save" +""+ gender);
         Employee em;
         try{
             em = EmployeeFactory.build(gender.getEmpFname(), gender.getEmpLname(), gender.getEmpAddress());
@@ -47,8 +47,8 @@ public class EmployeeController {
 
     @GetMapping("read/{empId}")
     public ResponseEntity<Employee> read(@PathVariable int empId) {
-        log.info("Read request:{}",empId);
-        //System.out.println("read" +""+ id);
+        //log.info("Read request:{}",empId);
+        System.out.println("read" +""+ empId);
         Employee read = this.employeeService.read(empId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
         return ResponseEntity.ok(read);
@@ -57,8 +57,8 @@ public class EmployeeController {
 
     @DeleteMapping("delete/{empId}")
     public ResponseEntity<Void> delete(@PathVariable int empId) {
-        log.info("delete request:{}",empId);
-        //System.out.println("delete" +""+ empId);
+        //log.info("delete request:{}",empId);
+        System.out.println("delete" +""+ empId);
         Optional<Employee> employee  = getById(empId);
         if (employee.isPresent()){
             this.employeeService.delete(employee.get());

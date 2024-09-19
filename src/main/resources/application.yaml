@@ -1,4 +1,5 @@
 server:
+  port: 8083
   error:
     include-stacktrace: always
 spring:
@@ -8,8 +9,8 @@ spring:
     show-sql: true
   datasource:
     url: jdbc:mysql://localhost:3306/resta-db?createDatabaseIfNotExist=true
-    username: root
-    password: Chadsmith2022
+    username: 'root'
+    password:
 
 
   #SECURITY CONFIGURATION
